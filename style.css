@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "verdana";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #02aab0; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(
+    to right,
+    #02aab0,
+    #00cdac
+  ); 
+  background: linear-gradient(to right, #02aab0, #00cdac); */
+}
+
+.heading {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.container {
+  width: 70rem;
+  height: auto;
+  /* height: 50rem; */
+  margin-top: 2rem;
+  background-color: white;
+  box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.1), -5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+  /* display: none; */
+}
+
+.header {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.header #quesNo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10rem;
+  background-color: #6dd5ed;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.timerDiv img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.timerDiv #timer {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content {
+  padding: 2rem 3rem 0 3rem;
+}
+
+.content .question {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.content .optionsDiv {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.option {
+  width: 100%;
+}
+
+.content .optionsDiv .option label {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+}
+
+.content .optionsDiv .option input[type="radio"] {
+  appearance: none;
+}
+
+.content .optionsDiv .option input[type="radio"]:checked ~ label {
+  background-color: #0b6aeb;
+  color: white;
+}
+
+.buttonDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.buttonDiv button {
+  background-color: #0b6aeb;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.submitBtn {
+  display: none;
+}
+
+
+/* */
+.resultContainer {
+  width: 50rem;
+  text-align: center;
+  padding: 5rem;
+  margin-top: 2rem;
+  background-color: white;
+  box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.1), -5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  display: none;
+}
+
+.resultContainer p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+.resultContainer #playAgain {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: #0b6aeb;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}

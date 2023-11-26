@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a computer quiz game created by dheeraj sharma."
+    />
+    <meta
+      name="keywords"
+      content="dheerajsharmaquiz dheerajquiz dheerajquz computerquiz computerquizbydheeraj computerquizbydheerajsharma"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dheeraj Sharma - Computer Quiz</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 class="heading">Computer Quiz</h1>
+      <div class="container">
+        <div class="header">
+          <p id="quesNo">2 of 3 Question</p>
+          <div class="timerDiv">
+            <img src="./timer-60.png" alt="" />
+            <span id="timer">8s</span>
+          </div>
+        </div>
+
+        <div class="content">
+          <p class="question" id="question"></p>
+          <div class="optionsDiv">
+            <div class="option">
+              <input type="radio" name="option" id="option1" />
+              <label for="option1" class="options" id="optionText1"
+                >Dheeraj sharma</label
+              >
+            </div>
+            <div class="option">
+              <input type="radio" name="option" id="option2" />
+              <label for="option2" class="options" id="optionText2"
+                >Dheeraj sharma</label
+              >
+            </div>
+            <div class="option">
+              <input type="radio" name="option" id="option3" />
+              <label for="option3" class="options" id="optionText3"
+                >Dheeraj sharma</label
+              >
+            </div>
+            <div class="option">
+              <input type="radio" name="option" id="option4" />
+              <label for="option4" class="options" id="optionText4"
+                >Dheeraj sharma</label
+              >
+            </div>
+          </div>
+          <div class="buttonDiv">
+            <button class="nextBtn">Next</button>
+            <button class="submitBtn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
